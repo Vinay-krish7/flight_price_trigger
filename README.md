@@ -1,16 +1,28 @@
 # flight_search
-Automated tool to send a personal message alert when the flight prices hit the lower threshold within a specified time range.
+Python-based flight deal monitoring system that:
 
+-fetches destination pricing data from Google Sheets via Sheety API,
+-searches live flight fares using Amadeus API,
+-compares prices against threshold values,
+-triggers email/WhatsApp alerts using Twilio.
 
-Work Flow:
-- Sheety contains the raw data of destinations, time range and price threshold for message trigger.
-- Sheety api call is used to read the data from relevant sheet.
-- This data is further used to do an api call in amadeus flight search service to check if any flight exists which meets our required lower price limit.
-- On identification of such a flight, twillio api service is used to trigger a whatsapp message to notify the specified user regarding the flight, date and price details.
+Features:
+-Automated flight search
+-Google Sheets integration
+-API-based workflow
+-WhatsApp notifications
+-Email alerts
+-Environment variable security
+-Modular OOP design
 
+Technologies Used:
+-Python
+-Requests
+-Sheety API
+-Amadeus API
+-Twilio API
+-dotenv
+-OOP concepts
 
-
-Key Concept used:
-- Api calls
-
-This tool can further be scheduled to run on a weekly/daily basis to automate the entire workflow.
+Workflow:
+Google sheet--Sheety API--Python processing--Amadeus Flight search--Price Comaprison--Notification trigger
