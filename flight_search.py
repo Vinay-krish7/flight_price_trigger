@@ -35,8 +35,6 @@ class FlightSearch:
         return response.json()['access_token']
 
     def get_destination_code(self, city_name):
-
-        print(f"Using this token to get destination {self._token}")
         headers = {"Authorization": f"Bearer {self._token}"}
         query = {
             "keyword": city_name,
@@ -62,7 +60,6 @@ class FlightSearch:
 
     def check_flights(self, origin_city_code, destination_city_code, from_time, to_time):
 
-        # print(f"Using this token to check_flights() {self._token}")
         headers = {"Authorization": f"Bearer {self._token}"}
         query = {
             "originLocationCode": origin_city_code,
@@ -83,10 +80,6 @@ class FlightSearch:
 
         if response.status_code != 200:
             print(f"check_flights() response code: {response.status_code}")
-            print("There was a problem with the flight search.\n"
-                  "For details on status codes, check the API documentation:\n"
-                  "https://developers.amadeus.com/self-service/category/flights/api-doc/flight-offers-search/api"
-                  "-reference")
             print("Response body:", response.text)
             return None
 
