@@ -15,9 +15,9 @@ class DataManager:
     def __init__(self):
         # self._user = os.environ["SHEETY_USERNAME"]
         # self._password = os.environ["SHEETY_PASSWORD"]
-        # self._token = os.environ["SHEETY_TOKEN"]
+        self._token = os.environ["SHEETY_TOKEN"]
         self._headers = {
-            "Authorization":"Basic dmluYXk6c2Jjd2Vjd2VnZzZm="
+            "Authorization":self._token
         }
         # self._authorization = HTTPBasicAuth(self._user, self._password)
         self.destination_data = {}
