@@ -12,3 +12,5 @@ Work Flow:
 
 Key Concept used:
 - Api calls
+
+This tool can further be scheduled to run on a weekly/daily basis to automate the entire workflow.
