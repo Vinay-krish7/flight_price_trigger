@@ -21,20 +21,26 @@
 - Requests Library
 - Sheety API
 - Amadeus Flight API
-- Twilio API -
+- Twilio API 
 -  dotenv
 - Object-Oriented Programming (OOP)
 
 ## Project Workflow 
- -Google Sheets
+
+```text
+
+
+ Google Sheets
      ↓
- -Sheety API
+ Sheety API
      ↓
- -Python Processing
+ Python Processing
      ↓
--Amadeus Flight Search
+Amadeus Flight Search
       ↓
--Price Comparison Logic
+Price Comparison Logic
        ↓
--Email / WhatsApp Notification Trigger
+Email / WhatsApp Notification Trigger
+
+```
 
